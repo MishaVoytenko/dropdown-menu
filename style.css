@@ -1,0 +1,40 @@
+.menu {
+  display: inline-block;
+}
+
+.menu._active .menu__list {
+  display: inline-block;
+}
+
+.menu._active .menu__button span:first-child {
+  display: none;
+}
+
+.menu._active .menu__button span:last-child {
+  display: block;
+}
+
+.menu__button span:first-child {
+  display: block;
+}
+
+.menu__button span:last-child {
+  display: none;
+}
+
+.menu__list {
+  background-color: coral;
+  padding: 15px;
+}
+
+.menu__list li:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+
+.menu__link {
+  color: cornsilk;
+  font-size: 18px;
+}
+
+.menu__link:hover {
+}
