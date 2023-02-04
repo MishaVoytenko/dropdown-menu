@@ -1,11 +1,18 @@
+* {
+  box-sizing: border-box;
+}
 .menu {
-  display: inline-block;
+  display: block;
 }
 
 .menu._active .menu__list {
-  display: inline-block;
+  display: block;
+  width: 10%;
 }
 
+.menu__button {
+  width: 10%;
+}
 .menu._active .menu__button span:first-child {
   display: none;
 }
@@ -31,10 +38,16 @@
   margin: 0 0 15px 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .menu__link {
   color: cornsilk;
   font-size: 18px;
+  list-style-type: none;
 }
 
 .menu__link:hover {
+  background-color: rgb(110, 32, 4);
 }
