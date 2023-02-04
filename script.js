@@ -1,12 +1,12 @@
-const menuBody = document.querySelector('.menu');
+const menuBody = document.querySelector('.menu__list');
 
 document.addEventListener('click', menu);
 
 function menu(event) {
   if (event.target.closest('.menu__button')) {
-    menuBody.classList.toggle('_active');
+    menuBody.hidden = !menuBody.hidden;
   }
   if (!event.target.closest('.menu')) {
-    menuBody.classList.remove('_active');
+    menuBody.hidden = true;
   }
 }

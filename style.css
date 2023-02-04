@@ -3,15 +3,11 @@
 }
 .menu {
   display: block;
-}
-
-.menu._active .menu__list {
-  display: block;
-  width: 10%;
+  position: relative;
 }
 
 .menu__button {
-  width: 10%;
+  width: 160px;
 }
 .menu._active .menu__button span:first-child {
   display: none;
@@ -32,10 +28,18 @@
 .menu__list {
   background-color: coral;
   padding: 15px;
+  position: absolute;
+  transition: 1s;
+  width: 160px;
 }
 
 .menu__list li:not(:last-child) {
   margin: 0 0 15px 0;
+}
+
+.menu__list[hidden] {
+  display: block;
+  transform: translateX(-150%);
 }
 
 ul {
